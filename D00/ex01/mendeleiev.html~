@@ -1,9 +1,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Tableau p&#233riodique des &#233l&#233ments de Mendele&#239ev</title>
+<title>Tableau p&#233riodique des éléments de Mendeleïev</title>
 <style>
 table	{border-collapse:collapse;}
+
 td		{width:75px;}
 td.el	{border:1px solid black;}
 
@@ -19,8 +20,7 @@ div.sy	{text-align:center;
 <table>
 	<tr>
 		<td class=el><div class=ma>1,00794</div><div class=sy>H</div><div class=at>1</div></td>
-		<td></td>
-		<td colspan=15></td>
+		<td colspan=16></td>
 		<td class=el><div class=ma>4,002602</div><div class=sy>He</div><div class=at>2</div></td>
 	</tr>
 	<tr>
