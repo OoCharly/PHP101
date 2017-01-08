@@ -1,18 +1,46 @@
-body			{
+body
+{
+	background-color:#505050;
+}
 
-div.banner		{
+div
+{
+	background-color:#909090;
+	margin:10px;
+	border-radius:10px;
+	box-shadow:10px 10px 5px black;
+}
+
+div	img
+{
+	padding: 10px;
+	height: 100%;
+}
+
+#banner
+{
+	padding:10px;
+	height:117px;
+}
+
+#board		{
 
 }
 
-div.board		{
-
+#action_l
+{
+	padding-left:35px;
+	padding-right:35px;
+	margin-left:50px;
+	float:left;
 }
 
-div.action_l	{
-
+#action_l img
+{
+	height:70px;
+	width:70px;
 }
 
 div.action_r	{
-	block
 
 }
