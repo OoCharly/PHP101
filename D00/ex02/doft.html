@@ -1,27 +1,51 @@
 <!DOCTYPE=HTML>
 <html>
-<head>
-<meta charset=utf-8>
-<link rel=stylesheet href=doft.css>
-</head>
-<body>
-<div id=banner>
-	<img src="resources/day_of_the_42.png" alt="">
-	<img src="resources/loupe.png" alt="" align=right>
-</div>
-<div id=action_l>
-<img src="resources/arrow.png" alt=""></br>
-<img src="resources/main.png" alt=""></br>
-<img src="resources/oeil.png" alt=""></br>
-<img src="resources/outil.png" alt=""></br>
-<img src="resources/chat-icon.png" alt=""></br>
+	<head>
+		<meta charset=utf-8>
+		<link rel=stylesheet href=doft.css>
+	</head>
+	<body>
+		<map name=cluster>
+			<area  alt="chaise" title="chaise" href="https://www.ikea.com/" shape="rect" coords="318,318,451,576" target="_self"/>
+			<area  alt="&#233cran" title="apple" href="https://www.apple.com/" shape="rect" coords="780,302,1007,480" target="_self"/>
+		</map>
+		<div class=wrapper id=banner>
+			<img alt=Banner title=Banner id=doft src="resources/day_of_the_42.png" alt="">
+			<div class=banner_r>
+				<img alt=loupe title=loupe src="resources/loupe.png" alt="">
+				<div class=banner_icon>
+					<a href="https://www.disney.com" title="Recommencer au d&#233but" alt="Recommencer au d&#233but"><img class=icon src="resources/reload.png"></a>
+					</br></br></br></br></br>
+					<a href="https://www.relaischateux.com" title="D&#233connecter" alt="D&#233connecter"><img class=icon src="resources/close.gif"></a>
+				</div>
+			</div>
+		</div>
+		<div class=center>
+			<div class=wrapper id=action_l>
+				<img src="resources/arrow.png" alt="Avancer"  title="Avancer"></br>
+				<img src="resources/main.png" alt="Prendre" title="Prendre"></br>
+				<img id=oeil src="resources/oeil.png" alt="Regarder" title="Regarder"></br>
+				<img src="resources/outil.png" alt="Utiliser" title="Utiliser"></br>
+				<img src="resources/chat-icon.png" alt="Parler" title="Parler">
 
-</div>
-<div id=action_r>
-
-</div>
-<div id=board>
-
-</div>
-</body>
+			</div>
+			<div class=wrapper id=board>
+				<img alt="cluster" title="cluster" src="resources/cluster.jpg" usemap="cluster">
+			</div>
+			<div class=wrapper id=action_r>
+				<img alt=guide title=guide id=guide src="resources/book.png"></br>
+				<img alt=towel title=towel id=towel src="resources/towel.png"></br>
+				<span alt=wall title=wall id=brick></span>
+			</div>
+			<div class=wrapper id=trucvert>
+				<span>Vous <span id=plus>entrez</span> alors dans une grande piece remplie</br>
+					d'<span id=tache >ordinateurs</span>...</span></br>
+				<span class="italic"><i>- Bonjour, vous &#234tes nouveau ici ?</i></span>
+				<form action="">
+					<input type=text id=txtzone>
+					<input type=submit name="repondre" value="Repondre" id=subm>
+				</form>
+			</div>
+		</div>
+	</body>
 </html>

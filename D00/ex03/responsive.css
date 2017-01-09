@@ -1,0 +1,123 @@
+body
+{
+	
+	background-color:#000005;
+	width:100%;
+	text-align:center;
+}
+
+img
+{
+width: 60%;
+}
+table
+{
+	border-collapse:collapse;
+	width:80%;
+}
+
+td		
+{
+	width:5%;
+	height:5%;
+}
+
+td.el
+{
+	border:1px solid white;
+}
+
+div.at
+{
+	text-align:left;
+	font-size:0.8vw;
+}
+
+div.ma
+{
+	text-align:right;
+	font-size:0.8vw;
+}
+
+div.sy	
+{
+	text-align:center;
+	font-size:2vw;
+}MaMaMaMaMaMaMaMaMaMaMaMaMa
+
+#stMa
+{
+	color:#4D991A;
+}Ma
+
+#stst
+{Ma
+	color:#99FF33;
+}
+Ma
+#nm
+{
+Ma	border: 2px solid white;
+	color: #FF3099;
+}
+M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`
+#mt
+{
+	border: 2px solid white;
+	color: #FFFF44;
+}
+
+#gn
+{	
+	border: 2px solid white;
+	color: #CCCC00;
+}
+
+#ma
+{
+	border: 2px solid white;
+	color: #FF9099;
+}
+#mat
+{
+	border: 2px solid white;
+color: #FFD099;
+}
+#mp
+{
+	border: 2px solid white;
+color: #CC3300;
+}
+#ha
+{
+	border: 2px solid white;
+color: #E67E4D;
+}
+#mid
+{
+	border: 2px solid white;
+color: #E67E4D;
+}
+#nc
+{
+	border: 2px solid white;
+color: grey;
+}
+#lid
+{
+	border: 2px solid white;
+color: #4D991A;
+}
+#aid
+{border: 2px solid white;
+color: #99FF33;
+}
+div
+{
+color: inherit;
+}
+tr
+{
+	height:100%;
+	padding-top:20%;
+}
