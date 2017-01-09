@@ -1,6 +1,6 @@
 body
 {
-	
+
 	background-color:#000005;
 	width:100%;
 	text-align:center;
@@ -8,7 +8,7 @@ body
 
 img
 {
-width: 60%;
+	width: 60%;
 }
 table
 {
@@ -43,24 +43,24 @@ div.sy
 {
 	text-align:center;
 	font-size:2vw;
-}MaMaMaMaMaMaMaMaMaMaMaMaMa
+}
 
 #stMa
 {
 	color:#4D991A;
-}Ma
+}
 
 #stst
-{Ma
+{
 	color:#99FF33;
 }
-Ma
+
 #nm
 {
-Ma	border: 2px solid white;
+	border: 2px solid white;
 	color: #FF3099;
 }
-M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`
+
 #mt
 {
 	border: 2px solid white;
@@ -81,40 +81,40 @@ M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`M`
 #mat
 {
 	border: 2px solid white;
-color: #FFD099;
+	color: #FFD099;
 }
 #mp
 {
 	border: 2px solid white;
-color: #CC3300;
+	color: #CC3300;
 }
 #ha
 {
 	border: 2px solid white;
-color: #E67E4D;
+	color: #E67E4D;
 }
 #mid
 {
 	border: 2px solid white;
-color: #E67E4D;
+	color: #E67E4D;
 }
 #nc
 {
 	border: 2px solid white;
-color: grey;
+	color: grey;
 }
 #lid
 {
 	border: 2px solid white;
-color: #4D991A;
+	color: #4D991A;
 }
 #aid
 {border: 2px solid white;
-color: #99FF33;
+	color: #99FF33;
 }
 div
 {
-color: inherit;
+	color: inherit;
 }
 tr
 {

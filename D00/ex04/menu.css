@@ -7,23 +7,28 @@ body
 div
 {
 	min-width:200px;
-	margin: 0 40%;
-	padding:20px 10px;
+	max-width:300px;
+	margin:0 35%;
+	background-color:#877b66;
 }
 
 a, a:hover, a:visited
 {
 	text-decoration:none;
-	float:center;
-	color:white;
+	color:#afc97e;
 }
 ul
 {
+	margin:0;
+	padding:0;
+	display:inline;
 	list-style:none;
 }
 ul li
 {
-	padding:5px 20px;
+	margin:0;
+	padding:10px 0;
+	width:100%;
 	background-color:#877b66;
 }
 ul li a
@@ -33,13 +38,20 @@ ul li a
 }
 ul.hidden li
 {
-	width:10%;
+	width:100%;
 	display:none;
+}
+
+ul li:hover
+{
+	background-color:#ffdf64 !important;
 }
 
 ul li:hover ul li
 {
-	float:left;
-	display:block;
-	background-color:#877b66;
+	display:inline-block;
+}
+ul li ul li
+{
+	background-color:#e2d686;
 }
