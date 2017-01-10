@@ -10,5 +10,5 @@ foreach($tami as $tmp)
 	$tmp = trim($tmp);
 	$out .= ($tmp) ? " $tmp": "";
 }
-echo ($out) ? trim($out)."\n" : "";
+echo ($out) ? trim($out)."\n" : "\n";
 ?>

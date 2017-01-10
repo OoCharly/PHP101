@@ -11,13 +11,15 @@ foreach($argv as $str)
 $out = 0;
 if ($argv[1] == "+")
 	$out = (int)$argv[0] + (int)$argv[2];
-if ($argv[1] == "-")
+else if ($argv[1] == "-")
 	$out = (int)$argv[0] - (int)$argv[2];
-if ($argv[1] == "*")
+else if ($argv[1] == "*")
 	$out = (int)$argv[0] * (int)$argv[2];
-if ($argv[1] == "/")
+else if ($argv[1] == "/")
 	$out = (int)$argv[0] / (int)$argv[2];
-if ($argv[1] == "%")
+else if ($argv[1] == "%")
 	$out = (int)$argv[0] % (int)$argv[2];
+else
+	exit;
 echo "$out\n";
 ?>
