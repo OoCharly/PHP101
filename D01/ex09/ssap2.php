@@ -20,31 +20,32 @@ foreach($argv as $param)
 function	char_filter($c1, $c2)
 {
 	if (ctype_alpha($c1))
-		return ((ctype_alpha($c2)) ? $c1 - $c2 : -1);
+		return ((ctype_alpha($c2)) ? ord($c1) - ord($c2) : -1);
 	else if (ctype_alpha($c2))
 		return (1);
 	else if (ctype_digit($c1))
-		return ((ctype_digit($c2)) ? $c1 - $c2 : -1);
+		return ((ctype_digit($c2)) ?ord($c1) - ord($c2) : -1);
 	else if (ctype_digit($c2))
 		return (1);
 	else
-		return ($c1 - $c2);
+		return (ord($c1) - ord($c2));
 }
 
 function	my_sort($s1, $s2)
 {
 	$i = 0;
+	$s1 = strtolower($s1);
+	$s2 = strtolower($s2);
 	while (isset($s1[$i]) && isset($s2[$i]))
 	{
-		if ($out = char_filter($s1[$i], $s2[$i]))
-			return ($out);
+		$out = char_filter($s1[$i], $s2[$i]);
+			if ($out != 0)
+				return ($out);
 		$i++;
 	}
-	if (!isset($s1[$i]) && isset($s2[$i]))
-		return (-1);
-	if (!isset($s2[$i]) && isset($s1[$i]))
-		return (1);
+	return (isset($s1[$i]) - isset($s2[$i]));
 }
 usort($out, 'my_sort');
-print_r($out);
+foreach($out as $str)
+	echo "$str\n";
 ?>
