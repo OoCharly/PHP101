@@ -2,23 +2,15 @@
 <?PHP
 if ($argc == 1)
 	exit;
-$i = 1;
-$j = 0;
-while ($i < $argc)
+array_shift($argv);
+foreach($argv as $param)
 {
-		$tamispace = explode(" ", trim($argv[$i]));
-		foreach($tamispace as $tmp)
-		{
-			$tmp = trim($tmp);
-			if ($tmp)
-			{
-				$out[$j] = $tmp;
-				$j++;
-			}
-		}
-		$i++;
+	$tmp = array_map('trim',explode(" ", $param));
+	$tmp = array_filter($tmp);
+	foreach($tmp as $str)
+		$out[] = $str;
 }
 sort($out);
 foreach($out as $str)
-	echo "$str\n";
+	echo"$str\n";
 ?>

@@ -3,8 +3,8 @@
 function ft_split($string)
 {
 	$out = explode(" ", $string);
-	if ($string)
-		sort($out);
+	$out = array_filter($out);
+	sort($out);
 	return ($out);
 }
 ?>

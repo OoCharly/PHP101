@@ -3,17 +3,12 @@
 $i = 0;
 if ($argc == 1)
 	exit;
-$tamispace = explode(" ", trim($argv[1]));
-foreach($tamispace as $tmp)
+$out = null;
+$tami = explode(" ", trim($argv[1]));
+foreach($tami as $tmp)
 {
 	$tmp = trim($tmp);
-	if ($i == 0 && $tmp)
-	{
-		echo $tmp;
-		$i++;
-	}
-	else if($tmp)
-		echo " $tmp";
+	$out .= ($tmp) ? " $tmp": "";
 }
-echo "\n";
+echo ($out) ? trim($out)."\n" : "";
 ?>
