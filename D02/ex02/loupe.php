@@ -17,7 +17,7 @@ if ($argv > 1)
 {
 	@$page = file_get_contents($argv[1]);
 	if (!$page)
-		echo "Impossible d'oubrir le fichier\n";
+		echo "Impossible d'ouvrir le fichier\n";
 	else
 	{
 		$page = preg_replace_callback('!(<a.*?>)(.*?)(</a>)!is', "ft_toupper", $page);
