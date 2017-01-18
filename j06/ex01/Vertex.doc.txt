@@ -1,0 +1,24 @@
+<- Vertex ---------------------------------------------------------------------
+The Vertex class handles Vertex (x,y,z,w)
+
+An instance can be constructed from an array as followed
+new Vertex( 'x' => 0, 'y' => 0, 'z' => 0[, 'w' => 0][, 'color' => new Color]);
+
+x, y, z, w constitutives values are converted to float.
+COLOR value is an instance of Color class.
+x, y and z values are mandatory.
+w and Color are optional and are set at 1.0 and white by default respectively.
+Any other use is undefined behaviour.
+
+The class provides the following methods:
+
+Mixed	get[X,Y,Z,W,Color]();
+return the corresponding value.
+
+void	set[X,Y,Z,W,Color]($value);
+set the corresponding value to $value.
+the setColor method expect a Color class as $value.
+
+void static doc()
+return the present document.
+--------------------------------------------------------------------- Vertex ->
