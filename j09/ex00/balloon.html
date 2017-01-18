@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Balloon</title>
-		<style>
-			#balloon
-			{
-				width:200px;
-				height:200px;
-				border-radius:50%;
-				background-color:red;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="balloon"></div>
-	</body>
+<head>
+	<title>Balloon</title>
+	<style>
+	#balloon
+	{
+		width:200px;
+		height:200px;
+		border-radius:50%;
+		background:red;
+	}
+	</style>
+</head>
+<body>
+	<div id="balloon" onclick='inflate()' onmouseout='deflate()'></div>
+	<script>
+	var balloon = document.getElementById('balloon');
+	var colors = ['red', 'green', 'blue'];
+	var index = 0;
+	var size;
+	function inflate()
+	{
+		if ((size = balloon.offsetHeight + 10) > 420){
+			size = 200;
+		}
+		if (++index > 2){
+			index = 0;
+		}
+		balloon.style.width = size+"px";
+		balloon.style.height = size+"px";
+		balloon.style.background = colors[index];
+	}
+	function deflate()
+	{
+		if ((size = balloon.offsetHeight - 5) < 200){
+			size = 200;
+		}
+		if (--index < 0) {
+			index = 2;
+		}
+		balloon.style.width = size+"px";
+		balloon.style.height = size+"px";
+		balloon.style.background = colors[index];
+	}
+	</script>
+</body>
 </html>
