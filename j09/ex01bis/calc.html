@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+  <input type=text name=left value=""/>
+  <select name=op>
+    <option value='+'>+</option>
+    <option value='-'>-</option>
+    <option value='*'>*</option>
+    <option value='/'>/</option>
+    <option value='%'>%</option>
+</select>
+<input type=text name=right value=""/>
+<input type=submit name=submit value="Try me!"/>
+<script>
+$('input:submit').click(function()
+{
+var left = $("input[name=left]").val();
+var right = $("input[name=right]").val();
+var op = $('select').val();
+console.debug(op);
+  if (isNaN(right) || isNaN(left) || right.length == 0 || left.length == 0
+      || parseInt(right) < 0 || parseInt(left) < 0){
+    alert("Error :(");
+  }
+  else if ((parseInt(right) == 0) && (op == "/" || op == "%")) {
+    console.log("It's over 9000!");
+    alert("It's over 9000!");
+  }
+  else {
+    var result = eval(parseInt(left)+op+parseInt(right));
+    console.log(result);
+    alert(result);
+  }
+});
+setInterval(function() {alert("Please, use me...");}, 30000);
+</script>
+</body>
+</html>

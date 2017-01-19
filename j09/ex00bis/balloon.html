@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balloon</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<style>
+	#balloon
+	{
+		width:200px;
+		height:200px;
+		border-radius:50%;
+		background:red;
+	}
+	</style>
+</head>
+<body>
+	<div id="balloon"></div>
+	<script>
+	var colors = ['red', 'green', 'blue'];
+	var index = 0;
+	var size;
+	$('#balloon').click(function()
+	{
+		if ((size = $(this).height() + 10) > 420){
+			size = 200;
+		}
+		if (++index > 2){
+			index = 0;
+		}
+		$(this).css("width", size+"px");
+		$(this).css("height", size+"px");
+		$(this).css("background", colors[index]);
+	});
+
+$('#balloon').mouseout(function()
+	{
+		if ((size =$(this).height() - 5) < 200){
+			size = 200;
+		}
+		if (--index < 0) {
+			index = 2;
+		}
+		$(this).css("width", size+"px");
+		$(this).css("height", size+"px");
+		$(this).css("background", colors[index]);
+	});
+	</script>
+</body>
+</html>

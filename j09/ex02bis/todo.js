@@ -1,10 +1,9 @@
 var new_req = document.getElementById('new');
 var ft_list = document.getElementById('ft_list');
 var count = 0;
-window.onload = get_cookie();
-function get_cookie()
+$(window).load(function()
 {
-	var cook = document.cookie;
+	var cook = $(document).cookie;
 	if (cook != undefined){
 		var result = {};
 		cook.split(';').forEach(function(x){
@@ -15,7 +14,7 @@ function get_cookie()
 		for (key in result)
 			add_task(result[key], key);
 	}
-}
+});
 
 function add_task(item, index){
 	if (index !== 'count' && index !== 'null')
@@ -41,7 +40,12 @@ function get_new()
 		ndiv.setAttribute('id', 't'+count);
 		var ntext = document.createTextNode(todo);
 		ndiv.appendChild(ntext);
-		ft_list.insertBefore(ndiv, ft_list.children[0]);
+		console.log($('#ft_list:first-child'));
+		var curent = $('#ft_list:first-child');
+		if (curent === undefined)
+			$('#ft_list').append(ndiv);
+		else
+			curent.before(ndiv);
 		count++;
 		todo = todo.replace(';', '%%');
 		var ndate = new Date();
