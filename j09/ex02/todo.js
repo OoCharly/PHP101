@@ -42,11 +42,10 @@ function get_new()
 		var ntext = document.createTextNode(todo);
 		ndiv.appendChild(ntext);
 		ft_list.insertBefore(ndiv, ft_list.children[0]);
-		count++;
-		todo = todo.replace(';', '%%');
 		var ndate = new Date();
 		ndate = ndate.setTime(ndate.getTime() + 8640000)
 		document.cookie = 't'+count+'='+todo+";"+ndate.toLocaleString();
+		count++;
 		document.cookie = 'count='+count;
 	}
 }
